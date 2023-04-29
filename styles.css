@@ -148,6 +148,10 @@ body {
 .hero-btn.prev {
     left: 36px;
 }
+
+.hero-btn:hover {
+    background-color: #F07F2E;
+}
 /* CATS */
 .cats-list {
     display: flex;
