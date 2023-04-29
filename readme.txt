@@ -23,3 +23,32 @@ https://i.goit.global/GwD0k
 📌 https://html-css.co.ua/
 📌 https://css.in.ua/
 📌 https://caninclude.glitch.me/ 
+
+=========================================================================
+
+29/04/2023 безкоштовний урок-практикум від ГоІт по JS.
+📌 codesandbox.io - онлайн редактор коду
+📌 https://codesandbox.io/s/weekend-js-bootcamp-wgok8b - вихідний html,
+📌 https://codesandbox.io/s/weekend-js-bootcamp-final-041161 - фінальний
+
+figma.com/file/oHkul41jKXn80Qm15nRGRh/DSGN?type=design&node-id=233-683&t=ai1O9T2e3snXvHh5-0
+
+📌 https://pawelgrzybek.github.io/siema/ - cлайдер з заняття (легкий, )
+📌 https://swiperjs.com/ - аналог
+📌 https://simplelightbox.com/ - бібліотека для картинок
+📌 https://basiclightbox.electerious.com/ - аналог
+📌 https://michalsnik.github.io/aos/ - бібліотека для анімацій
+
+📌 https://old.unicode-table.com/en/ - сайт з іконками
+📌 https://picsum.photos/ - рандомні картинки
+
+📌 https://uk.javascript.info/ - теорія по js (пріорітет)
+📌 https://w3schoolsua.github.io/index.html#gsc.tab=0 - теорія по js
+
+📌 https://www.codewars.com/dashboard сайт з задачками по js
+
+
+// Слайдер в герої. Бібліотека Siema
+// Галерея. Бібліотека SimpleLightbox
+// Анімація скролу. Потрібно додати дата-атрибут в html до елемента який потрібно анімувати. 
+Дата атрибут вказано в анімашках на сайті https://michalsnik.github.io/aos/. Додав до галереї загалом.

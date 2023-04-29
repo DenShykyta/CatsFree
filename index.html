@@ -16,6 +16,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <!-- Libraries -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.13.0/simple-lightbox.min.css"
+      integrity="sha512-74F0rBF7EW+3OTwz2fa2b9sGBEPSe4orL76WxHMnuVtlYF9h2+WiycMvMWn+nC0SZ5sNcIzhbBHiNneZ6f8ZFQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://unpkg.com/siema@1.5.1/dist/siema.min.css"
+    /> -->
     <!-- custom -->
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -31,29 +44,74 @@
       >
       <nav class="page-nav">
         <ul class="nav_list">
-          <li><a href="">Обрати котика</a></li>
-          <li><a href="">Задонатити котикам</a></li>
-          <li><a href="">Контакти</a></li>
+          <li><a href="#">Обрати котика</a></li>
+          <li><a href="#">Задонатити котикам</a></li>
+          <li><a href="#">Контакти</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <div class="hero container section">
-        <section class="greeting">
-          <h1 class="greeting_title">Привіт, людино</h1>
-          <p class="greeting_text">
-            Бракує в житті шовкових лапок, м’якенького пухнастого животика,
-            теплого муррркотіння й веселого розгардіяшу?Візьми собі котика.
-          </p>
-        </section>
-      </div>
+      <section class="hero section">
+        <div class="container">
+          <ul class="hero-list list">
+            <li class="hero-item first">
+              <div class="greeting">
+                <h1>Привіт, людино</h1>
+                <p>
+                  Бракує в житті шовкових лапок, м’якенького пухнастого
+                  животика, теплого муррркотіння й веселого розгардіяшу. Візьми
+                  собі котика.
+                </p>
+              </div>
+            </li>
+            <li class="hero-item second">
+              <div class="greeting">
+                <h1>Нарешті ти ту</h1>
+                <p>
+                  Люди й котики разом завжди щасливіші. Тож додай у своє життя
+                  щастячка. Чекаємо тебе!<br />
+                  Візьми собі котика.
+                </p>
+              </div>
+            </li>
+            <li class="hero-item third">
+              <div class="greeting">
+                <h1>Котики чекають</h1>
+                <p>
+                  Вибери того, що створений для тебе. Нехай сама любов муркоче
+                  тобі на вушко й торкається лапкою. <br />
+                  Візми собі котика.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <div class="hero-buttons">
+            <button type="button" class="hero-btn next">
+              <img
+                src="./img/arrow-right.svg"
+                alt="стрілка вліво"
+                width="24"
+                height="24"
+              />
+            </button>
+            <button type="button" class="hero-btn prev">
+              <img
+                src="./img/arrow-left.svg"
+                alt="стрілка вправо"
+                width="24"
+                height="24"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
       <section class="section container">
         <h2 class="section-title">
           Ці друзяки готові приймати твою любов і піклування
         </h2>
         <ul class="cats-list">
           <li>
-            <img src="./img/cat 1.jpg" alt="Барбарис" />
+            <img class="cat-photo" src="./img/cat 1.jpg" alt="Барбарис" />
             <div class="cats-list_content">
               <h3>Барбарис</h3>
               <p>Хижий для ворогів, ласкавий та м’якесенький до своїх.</p>
@@ -81,19 +139,67 @@
           Ти тільки поглянь, скільки ніжності! <br />
           На місці цих задоволених людей можеш бути ти.
         </p>
-        <ul class="gallery">
-          <li><img src="./img/1.jpg" alt="foto gallery" /></li>
-          <li><img src="./img/2.jpg" alt="foto gallery" /></li>
-          <li><img src="./img/3.jpg" alt="foto gallery" /></li>
-          <li><img src="./img/4.jpg" alt="foto gallery" /></li>
-          <li><img src="./img/5.jpg" alt="foto gallery" /></li>
-          <li><img src="./img/6.jpg" alt="foto gallery" /></li>
-          <li><img src="./img/7.jpg" alt="foto gallery" /></li>
-          <li><img src="./img/8.jpg" alt="foto gallery" /></li>
-          <li><img src="./img/9.jpg" alt="foto gallery" /></li>
-          <li><img src="./img/10.jpg" alt="foto gallery" /></li>
-          <li><img src="./img/11.jpg" alt="foto gallery" /></li>
-          <li><img src="./img/12.jpg" alt="foto gallery" /></li>
+        <ul class="gallery" data-aos="fade-up">
+          <li>
+            <a href="./img/1-big.jpeg"
+              ><img src="./img/1.jpg" alt="foto gallery" title="Photo"
+            /></a>
+          </li>
+          <li>
+            <a href="./img/2-big.jpeg"
+              ><img src="./img/2.jpg" alt="foto gallery" title="Photo"
+            /></a>
+          </li>
+          <li>
+            <a href="./img/3-big.jpeg"
+              ><img src="./img/3.jpg" alt="foto gallery" title="Photo"
+            /></a>
+          </li>
+          <li>
+            <a href="./img/4-big.jpeg"
+              ><img src="./img/4.jpg" alt="foto gallery" title="Photo"
+            /></a>
+          </li>
+          <li>
+            <a href="./img/5-big.jpeg"
+              ><img src="./img/5.jpg" alt="foto gallery" title="Photo"
+            /></a>
+          </li>
+          <li>
+            <a href="./img/6-big.jpeg"
+              ><img src="./img/6.jpg" alt="foto gallery" title="Photo"
+            /></a>
+          </li>
+          <li>
+            <a href="./img/7-big.jpeg"
+              ><img src="./img/7.jpg" alt="foto gallery" title="Photo"
+            /></a>
+          </li>
+          <li>
+            <a href="./img/8-big.jpeg"
+              ><img src="./img/8.jpg" alt="foto gallery" title="Photo"
+            /></a>
+          </li>
+          <li>
+            <a href="./img/9-big.jpeg"
+              ><img src="./img/9.jpg" alt="foto gallery" title="Photo"
+            /></a>
+          </li>
+          <li>
+            <a href="./img/10-big.jpeg"
+              ><img src="./img/10.jpg" alt="foto gallery" title="Photo"
+            /></a>
+          </li>
+          <li>
+            <a href="./img/11-big.jpeg"
+              ><img src="./img/11.jpg" alt="foto gallery" title="Photo"
+            /></a>
+          </li>
+          <li>
+            <a href="./img/12-big.jpeg"
+              ><img src="./img/12.jpg" alt="foto gallery" title="Photo"
+            /></a>
+          </li>
         </ul>
       </section>
     </main>
@@ -114,28 +220,28 @@
           <ul class="social_list">
             <li>
               <a href="">
-                <svg class="" width="" height="">
+                <svg>
                   <use href="./img/spite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="">
-                <svg class="" width="" height="">
+                <svg>
                   <use href="./img/spite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="">
-                <svg class="" width="" height="">
+                <svg>
                   <use href="./img/spite.svg#icon-youtube"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="">
-                <svg class="" width="" height="">
+                <svg>
                   <use href="./img/spite.svg#icon-tiktok"></use>
                 </svg>
               </a>
@@ -144,5 +250,14 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.13.0/simple-lightbox.min.js"
+      integrity="sha512-va85zLd+1szc8k3CyJ26pBSluqH+c3H+SOf4cBWhpHFU3ZI331gE6nqLUIm0kd1e0HcZq5YYwdHuSed8IhACAA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/siema@1.5.1/dist/siema.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

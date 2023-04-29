@@ -72,13 +72,34 @@ body {
 }
 /* HERO */
 .hero {
+    height: 480px;
+
+}
+.hero >.container {
+    height: 100%;
+    position: relative;
+}
+
+.hero-item {
+   
     position: relative;
     height: 480px;
     border-radius: 16px;
-    background-image: url(./img/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.hero-item.first {
+    background-image: url(./img/hero-bg.jpg);
+}
+
+.hero-item.second {
+    background-image: url(./img/hero-bg-2.jpeg);
+}
+
+.hero-item.third {
+    background-image: url(./img/hero-bg-3.jpeg);
 }
 
 .greeting {
@@ -91,10 +112,10 @@ body {
     padding: 24px;
 }
 
-.greeting_title {
+.greeting h1 {
     font-weight: 700;
     font-size: 32px;
-    line-height: 100%;
+    line-height: 1;
     letter-spacing: 1.25px;
     color: #FFFFFF;
     margin-bottom: 8px;
@@ -104,6 +125,28 @@ body {
     line-height: 1.5;
     letter-spacing: 0.5px;
     color: #FFFFFF;
+}
+.hero-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.hero-btn.next {
+    right: 36px;
+}
+
+.hero-btn.prev {
+    left: 36px;
 }
 /* CATS */
 .cats-list {
@@ -203,4 +246,5 @@ body {
 .social_list a:hover svg{
     fill: #F07F2E;
 }
+
 
